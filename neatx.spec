@@ -7,10 +7,10 @@
 Summary: An Open Source NX server
 Name: neatx
 Version: 0.3.1
-Release: 1%{?dist}
+#Release: 1%{?dist}
+Release:        %mkrel 1
 Source: %{name}-%{version}.tar.gz
 License: GPLv2
-Group: User Interface/X
 URL: http://code.google.com/p/neatx/
 
 BuildRoot: %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
