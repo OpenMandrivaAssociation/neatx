@@ -12,6 +12,7 @@ Release:        %mkrel 1
 Source: %{name}-%{version}.tar.gz
 License: GPLv2
 URL: http://code.google.com/p/neatx/
+Group: Networking/Remote access
 
 BuildRoot: %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 BuildArch: %{_arch}
