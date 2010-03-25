@@ -46,7 +46,7 @@ NoMachine.
 
 %build
 #./autogen.sh
-%configure
+%configure2_5x
 make
 
 %install
