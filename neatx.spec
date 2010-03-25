@@ -15,7 +15,6 @@ URL: http://code.google.com/p/neatx/
 Group: Networking/Remote access
 
 BuildRoot: %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
-BuildArch: %{_arch}
 
 BuildRequires: autoconf
 BuildRequires: automake
