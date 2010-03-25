@@ -8,7 +8,7 @@ Summary: An Open Source NX server
 Name: neatx
 Version: 0.3.1
 #Release: 1%{?dist}
-Release:        %mkrel 2
+Release:        %mkrel 3
 Source: %{name}-%{version}.tar.gz
 License: GPLv2
 URL: http://code.google.com/p/neatx/
