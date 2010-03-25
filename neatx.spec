@@ -14,7 +14,7 @@ License: GPLv2
 URL: http://code.google.com/p/neatx/
 Group: Networking/Remote access
 
-BuildRoot: %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: autoconf
 BuildRequires: automake
