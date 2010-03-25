@@ -36,7 +36,7 @@ Requires: xauth
 Requires: xrdb
 Requires: xorg-x11-fonts-misc
 Requires(pre): shadow-utils
-Requires(post): %__install
+Requires(post): coreutils
 
 %description
 Neatx is an Open Source NX server, similar to the commercial NX server from 
