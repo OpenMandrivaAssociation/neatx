@@ -42,7 +42,7 @@ Neatx is an Open Source NX server, similar to the commercial NX server from
 NoMachine.
 
 %prep
-%setup
+%setup -q
 
 %build
 #./autogen.sh
