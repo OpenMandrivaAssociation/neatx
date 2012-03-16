@@ -8,13 +8,11 @@ Summary: An Open Source NX server
 Name: neatx
 Version: 0.3.1
 #Release: 1%{?dist}
-Release:        %mkrel 3
-Source: %{name}-%{version}.tar.gz
+Release: 2
+Source0: %{name}-%{version}.tar.gz
 License: GPLv2
 URL: http://code.google.com/p/neatx/
 Group: Networking/Remote access
-
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: autoconf
 BuildRequires: automake
@@ -24,16 +22,16 @@ BuildRequires: python-devel
 BuildRequires: python-docutils
 
 Requires: openssh
-Requires: pexpect
-Requires: pygobject2 >= 2.14
+Requires: python-pexpect
+Requires: pkgconfig(pygobject-2.0)
 Requires: pygtk2 >= 2.13
 Requires: python >= 2.4
 Requires: python-simplejson
-Requires: nc
-Requires: nx
+#Requires: nc
+Requires: nxagent
 Requires: xauth
 Requires: xrdb
-Requires: xorg-x11-fonts-misc
+Requires: x11-font-misc
 Requires(pre): shadow-utils
 Requires(post): coreutils
 
@@ -47,16 +45,12 @@ NoMachine.
 %build
 #./autogen.sh
 %configure2_5x
-make
+%make
 
 %install
-rm -rf %{buildroot}
-make DESTDIR=%{buildroot} install
+%makeinstall_std
 # provide a meaningfull config file
 %__install -D -m 644 %{buildroot}/%_docdir/%{name}/neatx.conf.example %{buildroot}/etc/neatx.conf
-
-%clean
-rm -rf %{buildroot}
 
 %pre
 # create the nx user account
