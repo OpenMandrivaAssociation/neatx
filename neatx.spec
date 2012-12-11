@@ -84,3 +84,30 @@ fi
 #/usr/src/debug/neatx-0.1/src/fdcopy.c
 
 
+
+
+%changelog
+* Fri Mar 16 2012 Alexander Khrukin <akhrukin@mandriva.org> 0.3.1-4
++ Revision: 785231
+- rel bump
+- broken deps see #65353
+
+* Thu Mar 25 2010 Pascal Terjan <pterjan@mandriva.org> 0.3.1-3mdv2011.0
++ Revision: 527361
+- Use usual BuildRoot instead of a command braking rebuilding src.rpm if _tmppath does not yet exist
+- Silence setup
+- Use configure2_5x
+- Bump release
+- Drop BuildArch
+- Do not use explicit require on file
+
+* Tue Mar 23 2010 Emmanuel Blindauer <blindauer@mandriva.org> 0.3.1-2mdv2010.1
++ Revision: 526710
++ rebuild (emptylog)
+
+* Tue Feb 09 2010 Emmanuel Blindauer <blindauer@mandriva.org> 0.3.1-1mdv2010.1
++ Revision: 502870
+- add group
+- import
+- import neatx
+
