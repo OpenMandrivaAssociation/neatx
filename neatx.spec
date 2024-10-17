@@ -11,7 +11,7 @@ Version: 0.3.1
 Release: 5
 Source0: %{name}-%{version}.tar.gz
 License: GPLv2
-URL: http://code.google.com/p/neatx/
+URL: https://code.google.com/p/neatx/
 Group: Networking/Remote access
 
 BuildRequires: autoconf
