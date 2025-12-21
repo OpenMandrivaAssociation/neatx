@@ -14,6 +14,8 @@ License: GPLv2
 URL: https://code.google.com/p/neatx/
 Group: Networking/Remote access
 
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires: autoconf
 BuildRequires: automake
 BuildRequires: gcc
